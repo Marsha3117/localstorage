@@ -40,8 +40,9 @@ document.getElementById("agregar").addEventListener('click', function(){
      const borrarlista = document.getElementById("borrarlista");
      borrarlista.addEventListener("click", function() {
          document.getElementById("list").innerHTML = ''
+         localStorage.removeItem(localStorageKey); // Limpiar localStorage al borrar todo
      });
-     
+
  });
 
 
